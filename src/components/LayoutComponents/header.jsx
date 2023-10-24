@@ -37,7 +37,7 @@ function Header() {
           <li className="nav-item dropdown">
             <a className="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
               <i className="bi bi-bell"></i>
-              <span className="badge bg-primary badge-number">4</span>
+              <span className="badge bg-primary badge-number"> </span>
             </a>
 
             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
@@ -113,7 +113,7 @@ function Header() {
           <li className="nav-item dropdown">
             <a className="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
               <i className="bi bi-chat-left-text"></i>
-              <span className="badge bg-success badge-number">3</span>
+              <span className="badge bg-success badge-number"> </span>
             </a>
 
             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">

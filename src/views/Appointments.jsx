@@ -90,9 +90,12 @@ const Appointments = () => {
   return (
     <main id="main" className="main">
       <AppointmentModal open={isModalOpen} close={closeModal} data={selectedDate}/>
-      <Calendar bordered renderCell={renderCell} onClick={openModal} onSelect={handleDateSelect} />
+      <Calendar bordered renderCell={renderCell} onClick={(date) => {
+        openModal();
+      }} onSelect={handleDateSelect} />
     </main>
   );
 };
+
 
 export default Appointments;

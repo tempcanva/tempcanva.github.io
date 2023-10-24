@@ -3,6 +3,26 @@
   --vertical-menu-width: 300px;
 }
 
+.scrollbar {
+  overflow-y: scroll;
+  scroll-width: 6px;
+  scroll-track-color: #F5F5F5;
+  scroll-thumb-color: #E5E5E5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E5E5E5;
+  border-radius: 3px;
+}
+
 body {
   font-family: 'Poppins', sans-serif !important;
   background: #f6f9ff;
@@ -89,7 +109,9 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-
+.email-inf{
+  font-size: 11px;
+}
 /*--------------------------------------------------------------
 # Override some default Bootstrap stylings
 --------------------------------------------------------------*/
@@ -215,6 +237,7 @@ h6 {
 .card {
   margin-bottom: 30px;
   border: none;
+  border: 0px !important;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
@@ -697,6 +720,41 @@ ul li ul li span {
 .rounded-circle{
   height: 30px;
 }
+.returningCutomers{
+  height: 600px;
+  overflow-y: auto;
+}
+.customer-circle{
+  height: 50px;
+  border-radius: 100%;
+}
+
+.customer-title{
+  font-weight: 500;
+}
+
+.customer-mail{
+  background-color: #5b71b9;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.customer-mail:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.rounded-square{
+  border-radius: 10px;
+  width: 50px !important;
+  height: 50px !important;
+  font-size:  25px !important;
+}
 
 .sidebar-nav li {
   padding: 0;
@@ -886,13 +944,13 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 
 .dashboard .revenue-card .card-icon {
-  color: #2eca6a;
-  background: #e0f8e9;
+  color: #fff;
+  background: #5b71b9;
 }
 
 .dashboard .customers-card .card-icon {
   color: #ff771d;
-  background: #ffecdf;
+  background: #ffcba8;
 }
 
 /* Activity */

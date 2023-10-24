@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Login from './views/Login';
-import Dashboard from './views/Dashboard';
+import Dashboard from './views/Home';
 
 import 'rsuite/dist/rsuite.min.css';
 
